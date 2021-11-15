@@ -1,0 +1,136 @@
+/* -------------------  MOBILE  --------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Mono:wght@300;400;500&display=swap');
+:root {
+  --orange-color: #ffb07b;
+  --green-color: #51a18f;
+  --celeste-color: #757fae;
+  --brown-color: #744356;
+  --blue-color: #382f49;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: Arial;
+  min-height: 100vh;
+}
+
+header {
+  padding: 60px;
+  text-align: center;
+  background: var(--brown-color);
+  color: white;
+  font-size: 26px;
+  font-family: 'Red Hat Mono', monospace;
+}
+
+main {
+  background-color: rgb(240, 240, 240);
+}
+
+header p {
+  font-size: 16px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: var(--blue-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+li {
+  float: left;
+  border-right: 1px solid var(--celeste-color);
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: var(--celeste-color);
+  cursor: pointer;
+}
+
+.active {
+  background-color: var(--celeste-color);
+}
+
+.roverInfo {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.roverInfo p {
+  font-weight: bold;
+  float: left;
+}
+
+.innerRoverInfo {
+  width: 640px;
+  /* text-align: center; */
+  padding: 16px 32px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+}
+
+img {
+  /* float: left; */
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+}
+
+.right {
+  float: right;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-column-gap: 4px;
+  /* grid-gap: 14px; */
+}
+
+.grid-item {
+  padding: 1px;
+}
+
+/* -------------------  TABLET  --------------------- */
+
+@media (min-width: 768px) {
+  /* use mobile */
+}
+
+/* -------------------  DESKTOP  -------------------- */
+
+@media (min-width: 1224px) {
+  /* use mobile */
+}
+
+/* -------------------  LARGE SCREENS  -------------- */
+
+@media (min-width: 1824px) {
+  /* use mobile */
+}
